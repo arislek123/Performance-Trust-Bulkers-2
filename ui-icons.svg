@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <symbol id="vessel" viewBox="0 0 24 24"><path d="M2.5 14.5h19l-3 5h-12l-4-5Z"/><path d="M5.5 14.5v-4h4v4m1.5 0v-4h4v4m2 0v-8h4v8M18 6.5v-2h2M6.5 22h12"/></symbol>
+  <symbol id="switch" viewBox="0 0 24 24"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></symbol>
+  <symbol id="overview" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="cylinders" viewBox="0 0 24 24"><path d="M4 4v16m8-16v16m8-16v16"/><rect x="1.5" y="7" width="5" height="5" rx="1"/><rect x="9.5" y="12" width="5" height="5" rx="1"/><rect x="17.5" y="5" width="5" height="5" rx="1"/></symbol>
+  <symbol id="curves" viewBox="0 0 24 24"><path d="M3 3v18h18M6 16c3 0 3-7 6-7s3 4 6 0l3-5"/></symbol>
+  <symbol id="findings" viewBox="0 0 24 24"><path d="m3 6 1.5 1.5L7 5m-4 8 1.5 1.5L7 12m-4 8 1.5 1.5L7 19M11 6h10m-10 7h10m-10 7h10"/></symbol>
+  <symbol id="history" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="settings" viewBox="0 0 24 24"><path d="M3 6h5m5 0h8M3 18h10m5 0h3"/><circle cx="10.5" cy="6" r="2.5"/><circle cx="15.5" cy="18" r="2.5"/></symbol>
+  <symbol id="propeller" viewBox="0 0 24 24"><g fill="currentColor" fill-opacity=".13"><path d="M11 9c-2-3.2-1.5-6.5 1.4-7.1 3.6-.7 5.1 4.1 1.5 7.4L12 11Z"/><path d="M11 9c-2-3.2-1.5-6.5 1.4-7.1 3.6-.7 5.1 4.1 1.5 7.4L12 11Z" transform="rotate(120 12 12)"/><path d="M11 9c-2-3.2-1.5-6.5 1.4-7.1 3.6-.7 5.1 4.1 1.5 7.4L12 11Z" transform="rotate(240 12 12)"/></g><circle cx="12" cy="12" r="2.5" fill="var(--navy,#102b37)"/><circle cx="12" cy="12" r=".5" fill="currentColor" stroke="none"/></symbol>
+</svg>

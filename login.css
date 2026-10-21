@@ -1,0 +1,72 @@
+:root{--ink:#173e51;--muted:#607c8b;--teal:#22576b;--line:rgba(35,82,105,.17)}
+*{box-sizing:border-box}
+html{background:#d6ebf5;scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font:15px Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}
+button,a,input{-webkit-tap-highlight-color:transparent}
+button{cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid #4b849a;outline-offset:5px}
+a{color:inherit;text-decoration:none}
+svg{stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.access-screen{position:relative;isolation:isolate;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden;background:#a9cede}
+#sea{position:absolute;z-index:-3;inset:0;width:100%;height:100%;display:block}
+.water-shade{position:absolute;z-index:-2;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(233,246,251,.74) 0%,rgba(224,241,249,.28) 48%,rgba(225,240,248,.08) 75%),linear-gradient(180deg,rgba(238,248,252,.48),transparent 27%,transparent 76%,rgba(228,242,249,.72))}
+.masthead{width:100%;padding:31px 4.8%;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:700;letter-spacing:.14em;line-height:1.2}
+.brand-mark{height:43px;width:43px;stroke-width:1.9}
+.brand small{display:block;font-size:8px;font-weight:500;letter-spacing:.245em;margin-top:7px;color:#4f7286}
+.access-label{display:flex;align-items:center;gap:8px;font-size:9px;font-weight:600;letter-spacing:.17em;color:#3d6479}
+.access-label svg{width:17px;height:17px;stroke-width:1.2}
+.main-layout{width:min(1200px,86.5%);margin:auto;display:grid;grid-template-columns:1fr 406px;align-items:center;gap:90px;padding:34px 0 50px}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:10px;font-weight:600;letter-spacing:.22em;margin:0 0 24px;color:#376479}
+.eyebrow span{display:block;width:30px;height:1px;background:#4b7b90}
+h1{font-size:clamp(65px,6.4vw,92px);font-weight:400;line-height:1.025;letter-spacing:-.065em;margin:0;max-width:650px}
+h1 span{font-weight:500;color:#285e73}
+.intro-caption{font-size:14px;line-height:1.6;letter-spacing:.01em;color:#4f7387;margin:29px 0 0}
+.intro-rule{margin-top:34px;width:64px;height:1px;background:#6c96a9}
+.login-panel{padding:36px 36px 0;background:rgba(250,253,255,.92);border:1px solid rgba(255,255,255,.9);border-radius:15px;box-shadow:0 20px 65px rgba(27,78,104,.13),0 2px 8px rgba(33,78,100,.04);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.panel-heading{position:relative;padding-top:2px}
+.panel-emblem{position:absolute;right:0;top:0;width:38px;height:38px;display:grid;place-items:center;color:#527b8e;border:1px solid #d7e4ec;border-radius:10px;background:rgba(225,238,245,.4)}
+.panel-emblem svg{width:23px;height:23px;stroke-width:1.2}
+.panel-kicker{margin:0 0 13px;font-size:9px;font-weight:600;letter-spacing:.21em;color:#638296}
+h2{font-size:31px;font-weight:500;letter-spacing:-.045em;margin:0}
+.panel-description{font-size:12px;line-height:1.6;color:var(--muted);margin:9px 0 29px}
+.login-form label{display:block;font-size:11px;font-weight:600;letter-spacing:.015em;margin:0 0 9px}
+.input-wrap{position:relative;display:flex;align-items:center;height:49px;margin-bottom:21px;border:1px solid #cbdce6;border-radius:6px;background:rgba(255,255,255,.7);transition:border-color .18s,box-shadow .18s}
+.input-wrap:focus-within{border-color:#3f7f9a;box-shadow:0 0 0 3px rgba(69,130,155,.12)}
+.input-wrap>svg{margin-left:14px;flex-shrink:0;width:17px;height:17px;color:#6e8b9b;stroke-width:1.25}
+.input-wrap input{display:block;width:100%;min-width:0;height:100%;border:0;outline:0;background:transparent;color:#284c60;padding:0 14px 0 11px;font-size:13px;line-height:normal;border-radius:6px}
+.input-wrap input::placeholder{color:#96a9b5;font-size:12px;opacity:1}
+.password-wrap{margin-bottom:25px}
+.password-wrap input{padding-right:5px}
+.password-toggle{height:42px;width:42px;display:grid;place-items:center;flex-shrink:0;border:0;background:transparent;color:#7591a1;border-radius:4px;margin-right:3px}
+.password-toggle:hover{color:#285b72;background:#eaf2f7}
+.password-toggle svg{height:18px;width:18px;stroke-width:1.25}
+.eye-strike{display:none}
+.password-toggle[aria-pressed=true] .eye-strike{display:block}
+.sign-in{width:100%;height:49px;border:1px solid #173f53;border-radius:6px;background:#1a455a;color:#fff;display:flex;align-items:center;justify-content:center;gap:30px;font-size:12px;font-weight:500;letter-spacing:.025em;transition:background .18s,transform .18s,box-shadow .18s}
+.sign-in svg{height:19px;width:19px;position:absolute;right:18px;stroke-width:1.5}
+.sign-in{position:relative}
+.sign-in:hover{background:#245a71;box-shadow:0 5px 14px #21556f20;transform:translateY(-1px)}
+.sign-in:active{transform:translateY(0)}
+.preview-message{font-size:11px;line-height:1.6;color:#436f85;background:#eaf2f6;border-radius:5px;margin:14px 0 0;padding:10px 12px}
+[hidden]{display:none!important}
+.panel-footer{margin-top:28px;padding:19px 0 21px;border-top:1px solid #dde7ed;display:flex;align-items:center;justify-content:center;gap:7px;font-size:10px;color:#7c94a3}
+.panel-footer svg{height:13px;width:13px;stroke-width:1.15}
+.page-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 4.8% 27px;color:#547b90;font-size:8px;font-weight:500;letter-spacing:.12em}
+.water-hint{display:flex;align-items:center;gap:7px;font-size:9px;letter-spacing:.015em;font-weight:400;color:#52798d}
+.water-hint svg{width:15px;height:15px;stroke-width:1.15}
+@media(min-width:1600px){.main-layout{padding:70px 0 90px;gap:160px;width:min(1350px,83%);grid-template-columns:1fr 420px}h1{font-size:104px}.login-panel{padding:40px 40px 0}}
+@media(max-width:1100px){.main-layout{width:88%;gap:48px;grid-template-columns:1fr 370px}h1{font-size:68px}.login-panel{padding:30px 29px 0}.masthead{padding:25px 4.5%}.page-footer{padding:22px 4.5%}}
+@media(max-width:800px){.main-layout{width:min(540px,87%);grid-template-columns:1fr;gap:29px;padding:20px 0 32px}.intro{max-width:100%}.eyebrow{font-size:8px;margin:0 0 15px;gap:9px}.eyebrow span{width:21px}h1{font-size:48px;line-height:1.02;letter-spacing:-.055em}h1 br:last-of-type{display:none}h1 span:before{content:' '}.intro-caption{font-size:11px;margin-top:16px}.intro-rule{display:none}.login-panel{width:100%;padding:27px 29px 0;border-radius:12px}.masthead{padding:22px 6%}.brand{font-size:14px;letter-spacing:.12em;gap:9px}.brand-mark{height:34px;width:34px}.brand small{font-size:6px;letter-spacing:.21em;margin-top:5px}.access-label{font-size:7px;letter-spacing:.11em;gap:4px}.access-label svg{width:14px;height:14px}.panel-description{margin-bottom:23px}.panel-kicker{font-size:8px}.panel-heading h2{font-size:28px}.panel-emblem{height:34px;width:34px}.login-form label{font-size:10px}.input-wrap{margin-bottom:19px}.password-wrap{margin-bottom:22px}.panel-footer{margin-top:24px;padding:16px 0 18px}.page-footer{padding:18px 6% 22px;gap:15px;font-size:6px;letter-spacing:.09em}.footer-year{display:none}.water-hint{font-size:7px;gap:4px}.water-hint svg{width:11px;height:11px}.water-shade{background:linear-gradient(90deg,rgba(233,246,251,.68),rgba(224,241,249,.25)),linear-gradient(180deg,rgba(238,248,252,.38),transparent 50%,rgba(228,242,249,.4))}}
+@media(max-width:370px){.access-label{font-size:6px}.brand{font-size:12px}.main-layout{width:88%}h1{font-size:42px}.login-panel{padding:24px 23px 0}.page-footer>span:first-child{max-width:120px;line-height:1.6}.water-hint{max-width:105px;line-height:1.6}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.water-hint{display:none}}
+
+/* Minimal sign-in layout. */
+.access-screen{grid-template-rows:1fr}
+.main-layout{padding:64px 0}
+.login-panel{padding:36px}
+.panel-heading{margin-bottom:28px}
+@media(min-width:1600px){.login-panel{padding:40px}}
+@media(max-width:800px){.main-layout{padding:38px 0;gap:32px}.login-panel{padding:29px}.panel-heading{margin-bottom:24px}}
+@media(max-width:370px){.login-panel{padding:25px}}

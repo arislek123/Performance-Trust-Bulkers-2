@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://firebaseinstallations.googleapis.com; object-src 'none'; base-uri 'self'; form-action 'self'"><meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e3f0f6">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Performance Evaluation Tool</title>
+  <meta name="description" content="Performance Evaluation Tool — sign in.">
+  <link rel="icon" type="image/svg+xml" href="login-mark.svg">
+  <link rel="stylesheet" href="login.css">
+  <script src="ocean.js" defer></script>
+  <script type="module" src="access.js"></script>
+</head>
+<body>
+  <div class="access-screen">
+    <canvas id="sea" aria-hidden="true"></canvas>
+    <div class="water-shade" aria-hidden="true"></div>
+
+    <main id="main" class="main-layout">
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">Performance<br>Evaluation<br><span>Tool.</span></h1>
+      </section>
+
+      <section class="login-panel" aria-labelledby="login-title">
+        <div class="panel-heading">
+          <h2 id="login-title">Sign in</h2>
+        </div>
+        <div class="login-form" role="form" aria-labelledby="login-title">
+          <label for="username">Username</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="6.3" r="2.7"/><path d="M4.3 16v-1.2a5.7 5.7 0 0 1 11.4 0V16"/></svg>
+            <input id="username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Enter your username" required>
+          </div>
+          <label for="password">Password</label>
+          <div class="input-wrap password-wrap">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4.8" y="8.5" width="10.4" height="8" rx="2"/><path d="M6.8 8.5V6a3.2 3.2 0 0 1 6.4 0v2.5"/></svg>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button class="password-toggle" id="toggle-password" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 10s2.8-5 8-5 8 5 8 5-2.8 5-8 5-8-5-8-5Z"/><circle cx="10" cy="10" r="2.1"/><path class="eye-strike" d="m3 3 14 14"/></svg></button>
+          </div>
+          <button class="sign-in" id="sign-in" type="button"><span>Sign in</span><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M4 11h13m-5-5 5 5-5 5"/></svg></button>
+          <p class="preview-message" id="preview-message" role="status" aria-live="polite" hidden></p>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
